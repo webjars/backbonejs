@@ -1,8 +1,4 @@
-/*global requirejs */
-
-// Ensure any request for this webjar brings in jQuery.
 requirejs.config({
-    shim: {
-        backbone: [ 'webjars!underscore.js' ]
-    }
+    paths: { "backbonejs": webjars.path("backbonejs", "backbone") },
+    shim: { "backbonejs": [ "underscorejs" ] }
 });
