@@ -52,6 +52,12 @@
         <upstreamVersion>1.1.2</upstreamVersion>
         <upstreamSourceUrl>https://raw.github.com/documentcloud/backbone/${upstreamVersion}</upstreamSourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
+        <requirejs>
+            {
+                "paths": { "backbonejs": "backbone" },
+                "shim": { "backbonejs": [ "underscorejs" ] }
+            }
+        </requirejs>
     </properties>
 
     <build>
