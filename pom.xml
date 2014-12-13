@@ -54,8 +54,15 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs>
             {
-                "paths": { "backbonejs": "backbone" },
-                "shim": { "backbonejs": [ "underscorejs" ] }
+                "paths": {
+                    "backbonejs": "backbone"
+                },
+                "shim": {
+                    "backbonejs": {
+                        "deps": [ "underscorejs" ],
+                        "exports": "Backbone"
+                    }
+                }
             }
         </requirejs>
     </properties>
