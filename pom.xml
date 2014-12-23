@@ -55,9 +55,14 @@
         <requirejs>
             {
                 "paths": {
+                    "backbone": "backbone",
                     "backbonejs": "backbone"
                 },
                 "shim": {
+                    "backbone": {
+                        "deps": [ "underscore" ],
+                        "exports": "Backbone"
+                    },
                     "backbonejs": {
                         "deps": [ "underscorejs" ],
                         "exports": "Backbone"
