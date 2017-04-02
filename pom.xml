@@ -49,7 +49,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>1.3.2</upstreamVersion>
+        <upstreamVersion>1.3.3</upstreamVersion>
         <upstreamSourceUrl>https://raw.github.com/documentcloud/backbone/${upstreamVersion}</upstreamSourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs>
